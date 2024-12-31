@@ -8,7 +8,6 @@ import authrouter from './routes/auth.js';
 
 // Configure environment variables
 dotenv.config();
-
 // Create an instance of express
 const app = express();
 

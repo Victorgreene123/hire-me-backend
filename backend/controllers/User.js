@@ -96,4 +96,4 @@ const updateUser = async (req, res) =>{
 
 
 
-export { createUser , getUser , updateUser };
+export { createUser , getUser , updateUser , fetchUsers };
