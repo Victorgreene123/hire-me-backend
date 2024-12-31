@@ -9,6 +9,9 @@ const User = new mongoose.Schema({
     accountNum: String,
     Bank:String,
     password:String,
+    bio: String,
+    occupation: String,
+    rating: Number
 
 })
 

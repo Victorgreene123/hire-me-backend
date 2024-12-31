@@ -40,6 +40,17 @@ const createUser = async (req, res) => {
   }
 };
 
+const fetchUsers = async (req, res) => {
+    try {
+        const users = await userModel.find({});
+
+        res.status(200).json({users : users})
+        
+    } catch (error) { 
+        res.status(500).json({message: "Server Error" , success: false})
+    }  
+}
+
 const getUser = async (req, res) => {
   try {
     // Assume we're looking up the user by ID from the request parameters

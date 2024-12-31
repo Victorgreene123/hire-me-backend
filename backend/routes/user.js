@@ -11,6 +11,7 @@ const router = Router();
 
 router.route('/').post(createUser)
 
+
 router.route('/:id').get(verifyToken,getUser).patch(verifyToken, updateUser)
 
 
